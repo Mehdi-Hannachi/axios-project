@@ -1,0 +1,29 @@
+.card1 {
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  border-radius: 5px;
+  transition: 0.6s;
+
+  box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.5);
+}
+.card1:hover {
+  transform: rotatex(0deg);
+  transform: rotatez(0deg);
+  transition: 0.6s;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+  font-size: 25px;
+  font-family: "Abel", sans-serif;
+  color: rgb(124, 8, 8);
+  text-shadow: 0 0 2px rgb(255, 255, 255);
+}
+
+p {
+  font-family: "Abel", sans-serif;
+  color: rgb(4, 6, 14);
+  text-align: center;
+}
