@@ -9,32 +9,32 @@ export default class App extends Component {
   state = {
     users: [],
     posts: [],
-    comments: []
+    comments: [],
   };
   componentDidMount() {
     this.getUsers();
   }
 
   getUsers = () => {
-    axios.get(`https://jsonplaceholder.typicode.com/users`).then(res => {
+    axios.get(`https://jsonplaceholder.typicode.com/users`).then((res) => {
       const users = res.data;
       this.setState({ users });
     });
   };
 
-  getUserPosts = id => {
+  getUserPosts = (id) => {
     axios
       .get(`https://jsonplaceholder.typicode.com/posts/?userId=${id}`)
-      .then(res => {
+      .then((res) => {
         const posts = res.data;
         this.setState({ posts });
       });
   };
 
-  getPostComments = id => {
+  getPostComments = (id) => {
     axios
       .get(`https://jsonplaceholder.typicode.com/comments/?postId=${id}`)
-      .then(res => {
+      .then((res) => {
         const comments = res.data;
         this.setState({ comments });
       });
